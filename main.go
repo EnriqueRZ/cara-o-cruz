@@ -1,9 +1,11 @@
-package main;
+package main
 
 import (
 	"fmt"
+	"cara-cruz/utils"
 );
 
 func main() {
-	fmt.Println("HOLA MUNDO");
+	random := float64(utils.RandIntn(1<<53)) / (1 << 53)
+	fmt.Print("RANDOM = ", random);
 }
