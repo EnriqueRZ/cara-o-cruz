@@ -15,9 +15,18 @@ func main() {
 	
 	carasArray := utils.GetCaras()
 	for _, s := range carasArray {
-		fmt.Printf("%2s .\r", s)
-		time.Sleep(1 * time.Second)
+		fmt.Printf("%2s \r", s)
+		time.Sleep(1 * time.Second/2)
+		//if !(i == len(carasArray) - 1) {
 		clearScreen()
+		//} 
+	}
+
+	arrayCaraGanadora := utils.GetCaraGanadora()
+	if random < 0.5 {
+		fmt.Printf("%2s \r", arrayCaraGanadora[0])
+	} else if random > 0.5 {
+		fmt.Printf("%2s \r", arrayCaraGanadora[1])
 	}
 }
 
