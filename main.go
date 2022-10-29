@@ -11,7 +11,7 @@ import (
 
 func main() {
 	random := float64(utils.RandIntn(1<<53)) / (1 << 53)
-	fmt.Print("RANDOM = ", random);
+	//fmt.Print("RANDOM = ", random);
 	
 	carasArray := utils.GetCaras()
 	for _, s := range carasArray {
